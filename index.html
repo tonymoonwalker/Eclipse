@@ -1,205 +1,76 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="ru">
 
-    <head>
+<head>
     <meta charset="utf-8">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <title>Eclipse Response</title>
+    <!--    START LINK STYLES-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <!--    <link rel="stylesheet" type="text/css" href="css/styles.css">-->
-    <!-- after project finished - next two strings should be removed -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet/less" type="text/css" href="less/styles.less">
-    <script type="text/javascript" src="js/less.min.js"></script>
+    <!--    END LINK STYLES-->
+    <!--    START LINK SCRIPTS-->
+    <script src="js/less.min.js"></script>
+    <!--    END LINK SCRIPTS-->
 </head>
 
-<body>
-    <header>
-        <div class="container_inner">
-            <div class="wrapper">
-                <div class="block block__top"><img class="logo" alt="eclipse_logo" width="69" height="69" src="images/logo.png">
-                    <nav class="navigation">
-                        <a class="a navigation_item" href="javascript:void(0)">about</a>
-                        <a class="a navigation_item" href="javascript:void(0)">studio</a>
-                        <a class="a navigation_item" href="javascript:void(0)">pricing</a>
-                        <a class="a navigation_item" href="javascript:void(0)">blog</a>
-                        <a class="a navigation_item" href="javascript:void(0)">join</a>
+<body class="page">
+    <header class="page__line page__line--h">
+        <div class="wrapper">
+            <div class="s__line line--headeline page__line--h__headline">
+                <div class="logo headline__logo">
+                    <img alt="Eclipse logo" width="68" height="68" src="images/logo.png">
+                </div>
+                <div class="navbar headline__navbar">
+                    <nav class="menu headline__menu">
+                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">about</a>
+                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">studio</a>
+                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">pricing</a>
+                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">blog</a>
                     </nav>
+                    <a class="button line--h_button" href="javascript:void(0)">Join</a>
                 </div>
-                <div class="block block__bottom">
-                    <h1 class="h h1">push yourself<br>&amp; your<br>designs</h1>
-                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <form name="design_chooser">
-                        <div class="select_limiter">
-                            <select id="design_select" name="design_select" class="form_field design_select">
-                                    <option class="select_option" disabled selected>Design Style</option>
-                                    <option class="select_option">Light Style</option>
-                                    <option class="select_option">Dark Style</option>
-                                </select>
-                        </div>
-                        <input type="email" placeholder="Email" class="form_field" pattern="*@*" id="field_email" required>
-                        <button form="design_chooser" type="submit" name="submit_button" id="submit_button" class="button button_submit"><img src="images/icons/button_send.svg" width="19" height="19"></button>
-                    </form>
-                </div>
+            </div>
+            <div class="s__line line--bottomline line--h__bottomline">
+                <h1 class="h h1 line--h_h1">push yourself<br>&amp; your<br>design</h1>
+                <p class="p line--h_p">You hit your head, Mr. Eastwood. Not too serious,<br>but lucky for you, Seamus found you when he did.</p>
+                <form class="form--submit">
+                    <div class="form_field--wrapper">
+                        <select class="form_item form_field form--submit_field--select">
+                            <option class="form_option form_option--disabled" selected disabled>Design Style</option>
+                            <option class="form_option">Dark Design</option>
+                            <option class="form_option">Light Design</option>
+                        </select>
+                    </div>
+                    <div class="form_field--wrapper">
+                        <input type="email" name="header_email-field" id="header_email-field" class="form_item form_field form--submit_field--email" placeholder="Email" pattern="*@*" required>
+                    </div>
+                    <label class="button button--styled form_button" for="header_button-submit"></label>
+                    <input type="submit" id="header_button-submit" class="button button--base button--hidden" value="submit">
+                </form>
             </div>
         </div>
     </header>
-    <div class="container container_outer">
-        <section class="section section_top">
-            <div class="container_inner">
-                <div class="wrapper">
-                    <h2 class="h h2">latest design style</h2>
-                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</p>
-                </div>
-            </div>
-        </section>
-        <section class="section section_middle">
-            <div class="container_inner">
-                <div class="wrapper">
-                    <div class="block block_top">
-                        <h3 class="h h3">features of app</h3>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="block block_bottom">
-                        <div class="inline-block features_card card_1">
-                            <div class="card_image">
-                                <div class="card_icon"></div>
-                            </div>
-                            <h4 class="h h4">Lorem ipsum dolor sit</h4>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
-                        </div>
-                        <div class="inline-block features_card card_2">
-                            <div class="card_image">
-                                <div class="card_icon"></div>
-                            </div>
-                            <h4 class="h h4">ametconsectetur</h4>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                        </div>
-                        <div class="inline-block features_card card_3">
-                            <div class="card_image">
-                                <div class="card_icon"></div>
-                            </div>
-                            <h4 class="h h4">Lorem ipsum dolor sit</h4>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        </div>
-                        <div class="inline-block features_card card_4">
-                            <div class="card_image">
-                                <div class="card_icon"></div>
-                            </div>
-                            <h4 class="h h4">Lorem ipsum dolor sit</h4>
-                            <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section_bottom">
-            <div class="container_inner">
-                <div class="wrapper">
-                    <div class="block block_top">
-                        <h3 class="h h3">our design guidlines</h3>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                    </div>
-                    <div class="block block_bottom">
-                        <div class="slider">
-                            <input type="radio" name="slide_button" id="slide_button_1" class="slider_radio">
-                            <label for="slide_button_1" class="slider_button">random use</label>
-                            <input type="radio" name="slide_button" id="slide_button_2" class="slider_radio" checked>
-                            <label class="slider_button" for="slide_button_2">design</label>
-                            <input type="radio" name="slide_button" id="slide_button_3" class="slider_radio">
-                            <label class="slider_button" for="slide_button_3">business</label>
-                            <input type="radio" name="slide_button" id="slide_button_4" class="slider_radio">
-                            <label class="slider_button" for="slide_button_4">arts</label>
-
-                            <div class="slider_limiter">
-                                <div class="slider_container">
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                    <a class="inline-block slide">
-                                        <div class="slide_part slide_img"></div><span class="slide_part slide_caption">design listing one</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </div>
-    <footer>
-        <div class="block block_top">
-            <div class="container_inner">
-                <div class="wrapper">
-                    <h1 class="h h1">push yourself<br>&amp; your<br>designs</h1>
-                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua. </p>
-                </div>
-            </div>
-        </div>
-        <div class="block block_bottom">
-            <a class="button_home" href="#"></a>
-            <img class="image_float" src="images/Click%20to%20place%20design.png" width="919" height="992" alt="shittyMacBook">
+    <div class="page__line page__line--c">
+        <section class="section line__section line__section-a">
             <div class="wrapper">
-                <div class="block block_left">
-                    <ul class="menu">
-                        <li class="menu_item">
-                            <a class="a">About Us</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="a">Support</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="a">Why Buy</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="a">Affilates</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="a">Contact Us</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="a">Returns</a>
-                        </li>
-                    </ul>
-                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+                <div class="s__line line--headline p__line--c_headline">
+                    <h2 class="h h2 line__section-a_h2">latest design style</h2>
+                    <p class="p page__line--c_p">OK, relax Doc, it's me, it's me, it's Marty!<br>No it can't be you...</p>
                 </div>
-                <div class="block  block_right"><a href="javascrip:void(0)" class="a social social_tw">Tweet</a>
-                    <a href="javascrip:void(0)" class="a social social_fb">Share</a>
-                    <p class="p">Made in Melbourne By BlazRobar.com &#64; BlazRobar</p>
-                    <p class="p">Copyright &copy; 2016, Cool stuff here</p>
-                </div>
+                <div class="s__line line--bottomline line__section-a__bottomline"></div>
             </div>
-        </div>
+        </section>
+        <section class="section line__section line__section-b">
+            <div class="wrapper"></div>
+        </section>
+        <section class="section line__section line__section-c">
+            <div class="wrapper"></div>
+        </section>
+    </div>
+    <footer class="page__line page__line--f">
+        <div class="wrapper"></div>
     </footer>
 </body>
 
