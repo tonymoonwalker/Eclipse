@@ -7,7 +7,8 @@
     <title>Eclipse Response</title>
     <!--    START LINK STYLES-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <!--    <link rel="stylesheet" type="text/css" href="css/styles.css">-->
     <link rel="stylesheet/less" type="text/css" href="less/styles.less">
     <!--    END LINK STYLES-->
     <!--    START LINK SCRIPTS-->
@@ -15,62 +16,69 @@
     <!--    END LINK SCRIPTS-->
 </head>
 
-<body class="page">
-    <header class="page__line page__line--h">
-        <div class="wrapper">
-            <div class="s__line line--headeline page__line--h__headline">
-                <div class="logo headline__logo">
-                    <img alt="Eclipse logo" width="68" height="68" src="images/logo.png">
-                </div>
-                <div class="navbar headline__navbar">
-                    <nav class="menu headline__menu">
-                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">about</a>
-                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">studio</a>
-                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">pricing</a>
-                        <a class="menu_item line--h__menu_item" href="javascript:void(0)">blog</a>
+<body class="b-page">
+    <header class="ps ps--header">
+        <div class="b-wrapper">
+            <div class="b-line b-line--head ps--header__b-line--head">
+                <div class="b-logo"><img class="e-logo" width="68" height="68" alt="Eclipse logo" src="images/logo.png"></div>
+                <div class="b-navbar">
+                    <nav class="menu ps--header__menu">
+                        <a class="menu-item ps--header_menu-item" href="javascript:void(0)">about</a>
+                        <a class="menu-item ps--header_menu-item" href="javascript:void()">studio</a>
+                        <a class="menu-item ps--header_menu-item" href="javascript:void()">pricing</a>
+                        <a class="menu-item ps--header_menu-item" href="javascript:void()">blog</a>
                     </nav>
-                    <a class="button line--h_button" href="javascript:void(0)">Join</a>
+                    <a class="button button--join" href="javascript:void()">Join</a>
                 </div>
             </div>
-            <div class="s__line line--bottomline line--h__bottomline">
-                <h1 class="h h1 line--h_h1">push yourself<br>&amp; your<br>design</h1>
-                <p class="p line--h_p">You hit your head, Mr. Eastwood. Not too serious,<br>but lucky for you, Seamus found you when he did.</p>
-                <form class="form--submit">
-                    <div class="form_field--wrapper">
-                        <select class="form_item form_field form--submit_field--select">
-                            <option class="form_option form_option--disabled" selected disabled>Design Style</option>
-                            <option class="form_option">Dark Design</option>
-                            <option class="form_option">Light Design</option>
+            <div class="b-line b-line--body ps--header__b-line--body">
+                <h1 class="h h1 ps--header_h1">push yourself<br>&amp; your<br>design</h1>
+                <p class="p ps--header_p">I've come to say goodbye. Goodbye?<br>Well, where ya goin'?</p>
+                <form class="form ps--header__form">
+                    <div class="form_item-wrapper">
+                        <select name="select-field" id="select-field" class="form_field form_field-select">
+                            <option class="form_option" disabled selected>Select Design</option>
+                            <option class="form_option">Light Theme</option>
+                            <option class="form_option">Dark Theme</option>
                         </select>
                     </div>
-                    <div class="form_field--wrapper">
-                        <input type="email" name="header_email-field" id="header_email-field" class="form_item form_field form--submit_field--email" placeholder="Email" pattern="*@*" required>
+                    <div class="form_item-wrapper">
+                        <input type="email" name="email-field" id="email-field" class="form_field form_field-email" pattern="*@*" placeholder="Email" required>
                     </div>
-                    <label class="button button--styled form_button" for="header_button-submit"></label>
-                    <input type="submit" id="header_button-submit" class="button button--base button--hidden" value="submit">
+                    <label for="submit-button" class="button button-submit button--visible"></label>
+                    <input type="submit" name="submit-button" id="submit-button" value="Submit" class="button button--submit button--hidden">
                 </form>
             </div>
         </div>
     </header>
-    <div class="page__line page__line--c">
-        <section class="section line__section line__section-a">
-            <div class="wrapper">
-                <div class="s__line line--headline p__line--c_headline">
-                    <h2 class="h h2 line__section-a_h2">latest design style</h2>
-                    <p class="p page__line--c_p">OK, relax Doc, it's me, it's me, it's Marty!<br>No it can't be you...</p>
+    <section class="ps ps--container">
+        <div class="ps ps--body ps--body-1">
+            <div class="b-wrapper">
+                <div class="b-line b-line--head">
+                    <h2 class="h h2 ps--body_h">latest design style</h2>
+                    <p class="p ps--body_p">I can't play. George. George. George. (to kid) Excuse me.<br>(he shoves the kid out of the way and kisses Loraine.)</p>
                 </div>
-                <div class="s__line line--bottomline line__section-a__bottomline"></div>
+                <div class="b-line b-line--body"></div>
             </div>
-        </section>
-        <section class="section line__section line__section-b">
-            <div class="wrapper"></div>
-        </section>
-        <section class="section line__section line__section-c">
-            <div class="wrapper"></div>
-        </section>
-    </div>
-    <footer class="page__line page__line--f">
-        <div class="wrapper"></div>
+        </div>
+        <div class="ps ps--body ps--body-2">
+            <div class="b-wrapper">
+                <div class="b-line b-line--head"></div>
+                <div class="b-line b-line--body"></div>
+            </div>
+        </div>
+        <div class="ps ps--body ps--body-3">
+            <div class="b-wrapper">
+                <div class="b-line b-line--head"></div>
+                <div class="b-line b-line--body"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="ps ps--footer">
+        <div class="b-wrapper">
+            <div class="b-line b-line--head"></div>
+            <div class="b-line b-line--body"></div>
+        </div>
     </footer>
 </body>
 
